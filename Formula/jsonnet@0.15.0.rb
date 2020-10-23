@@ -3,7 +3,10 @@ class JsonnetAT0150 < Formula
   homepage "https://jsonnet.org/"
   url "https://github.com/google/jsonnet/archive/v0.15.0.tar.gz"
   sha256 "0b58f2a36a5625c717e717a7e85608730e7bb5bfd8be1765dd6fa23be1f9b9e8"
+  revision 1
   head "https://github.com/google/jsonnet.git"
+
+  keg_only :versioned_formula
 
   def install
     ENV.cxx11

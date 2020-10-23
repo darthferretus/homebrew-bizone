@@ -4,7 +4,10 @@ class JsonnetAT0160 < Formula
   url "https://github.com/google/jsonnet/archive/v0.16.0.tar.gz"
   sha256 "fa1a4047942797b7c4ed39718a20d63d1b98725fb5cf563efbc1ecca3375426f"
   license "Apache-2.0"
+  revision 1
   head "https://github.com/google/jsonnet.git"
+
+  keg_only :versioned_formula
 
   livecheck do
     url "https://github.com/google/jsonnet/releases/latest"
