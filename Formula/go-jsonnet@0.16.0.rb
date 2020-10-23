@@ -5,10 +5,11 @@ class GoJsonnetAT0160 < Formula
   sha256 "8ca930c892d34a119c1970431d159000321fe323734f06a1253bd78fc3625b84"
   license "Apache-2.0"
   head "https://github.com/google/go-jsonnet.git"
+  revision 1
+
+  keg_only :versioned_formula
 
   depends_on "go" => :build
-
-  conflicts_with "jsonnet", because: "both install binaries with the same name"
 
   def install
     system "go", "build", "-o", bin/"jsonnet", "./cmd/jsonnet"

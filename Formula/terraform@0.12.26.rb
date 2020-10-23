@@ -4,10 +4,11 @@ class TerraformAT01226 < Formula
   url "https://github.com/hashicorp/terraform/archive/v0.12.26.tar.gz"
   sha256 "4db5deb8c6a81956bf603196a1300aacbe80dd5716244ae20c2f9b3df571df4e"
   head "https://github.com/hashicorp/terraform.git"
+  revision 1
+
+  keg_only :versioned_formula
 
   depends_on "go@1.13" => :build
-
-  conflicts_with "tfenv", :because => "tfenv symlinks terraform binaries"
 
   def install
     # v0.6.12 - source contains tests which fail if these environment variables are set locally.
