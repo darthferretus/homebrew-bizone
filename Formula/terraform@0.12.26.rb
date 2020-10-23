@@ -3,8 +3,8 @@ class TerraformAT01226 < Formula
   homepage "https://www.terraform.io/"
   url "https://github.com/hashicorp/terraform/archive/v0.12.26.tar.gz"
   sha256 "4db5deb8c6a81956bf603196a1300aacbe80dd5716244ae20c2f9b3df571df4e"
-  head "https://github.com/hashicorp/terraform.git"
   revision 1
+  head "https://github.com/hashicorp/terraform.git"
 
   keg_only :versioned_formula
 
