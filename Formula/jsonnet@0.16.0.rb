@@ -7,12 +7,12 @@ class JsonnetAT0160 < Formula
   revision 1
   head "https://github.com/google/jsonnet.git"
 
-  keg_only :versioned_formula
-
   livecheck do
     url "https://github.com/google/jsonnet/releases/latest"
     regex(%r{href=.*?/tag/v?(\d+(?:\.\d+)+)["' >]}i)
   end
+
+  keg_only :versioned_formula
 
   def install
     ENV.cxx11
