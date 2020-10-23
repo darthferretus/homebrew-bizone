@@ -1,4 +1,4 @@
-class JsonnetAT0160 < Formula
+class Jsonnet < Formula
   desc "Domain specific configuration language for defining JSON data"
   homepage "https://jsonnet.org/"
   url "https://github.com/google/jsonnet/archive/v0.16.0.tar.gz"

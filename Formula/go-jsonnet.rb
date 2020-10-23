@@ -1,4 +1,4 @@
-class GoJsonnetAT0160 < Formula
+class GoJsonnet < Formula
   desc "Go implemention of configuration language for defining JSON data"
   homepage "https://jsonnet.org/"
   url "https://github.com/google/go-jsonnet/archive/v0.16.0.tar.gz"
