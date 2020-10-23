@@ -6,6 +6,13 @@ class GoJsonnet < Formula
   license "Apache-2.0"
   head "https://github.com/google/go-jsonnet.git"
 
+  bottle do
+    root_url "https://github.com/darthferretus/homebrew-bizone/releases/download/go-jsonnet-0.16.0"
+    cellar :any_skip_relocation
+    sha256 "1d146473d420a900f38111deaa35215d311758a4e3a1dba7ccf19ce851064a51" => :catalina
+    sha256 "63a475dd647f617404a8c72fa6de904aa3efd37ab991936e33f7463063b62492" => :x86_64_linux
+  end
+
   depends_on "go" => :build
 
   conflicts_with "jsonnet", because: "both install binaries with the same name"
