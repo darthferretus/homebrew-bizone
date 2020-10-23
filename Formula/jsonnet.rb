@@ -11,7 +11,7 @@ class Jsonnet < Formula
     regex(%r{href=.*?/tag/v?(\d+(?:\.\d+)+)["' >]}i)
   end
 
-# test
+  # test
 
   def install
     ENV.cxx11
