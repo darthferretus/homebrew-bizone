@@ -11,6 +11,13 @@ class Jsonnet < Formula
     regex(%r{href=.*?/tag/v?(\d+(?:\.\d+)+)["' >]}i)
   end
 
+  bottle do
+    root_url "https://github.com/darthferretus/homebrew-bizone/releases/download/jsonnet-0.16.0"
+    cellar :any_skip_relocation
+    sha256 "6a5d19933091eb3d531fb719a02f4cd1ea70ede12cdde25a7ac2dcad6a7f593a" => :catalina
+    sha256 "b4a0fcbc577777ccdeec10c2e736975b1ef81a83b199ab9e6f756832fd9316cf" => :x86_64_linux
+  end
+
   # test
 
   def install
