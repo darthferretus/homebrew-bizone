@@ -42,4 +42,3 @@ class GoJsonnetAT0160 < Formula
     assert_equal expected_output, JSON.parse(output)
   end
 end
-# build me a bottle
