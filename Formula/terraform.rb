@@ -5,6 +5,13 @@ class Terraform < Formula
   sha256 "4db5deb8c6a81956bf603196a1300aacbe80dd5716244ae20c2f9b3df571df4e"
   head "https://github.com/hashicorp/terraform.git"
 
+  bottle do
+    root_url "https://github.com/darthferretus/homebrew-bizone/releases/download/terraform-0.12.26"
+    cellar :any_skip_relocation
+    sha256 "eae8241953e461b1af2ab775ac73f5b681f593a464114dae0258f7c82166d7d8" => :catalina
+    sha256 "b19cd2d611143f300d2cbee9bf43baa2cc9b12ff914b3234a172123970e81904" => :x86_64_linux
+  end
+
   depends_on "go@1.13" => :build
 
   conflicts_with "tfenv", because: "tfenv symlinks terraform binaries"
