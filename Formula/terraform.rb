@@ -51,4 +51,3 @@ class Terraform < Formula
     system "#{bin}/terraform", "graph"
   end
 end
-# build me a bottle
